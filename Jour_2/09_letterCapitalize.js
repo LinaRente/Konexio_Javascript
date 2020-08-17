@@ -1,6 +1,6 @@
-function titleCase(str) {
+function letterCapitalize(sentence) {
     
-   var string = str.toLowerCase().split(' ');
+   var string = sentence.toLowerCase().split(' ');
 
    for (var i = 0; i < string.length; i++) {
 
@@ -10,4 +10,4 @@ function titleCase(str) {
    return string.join(' '); 
 }
 
-console.log(titleCase("LINA RENTERIA MEJIA")); 
+console.log(letterCapitalize("lina renteria")); 
