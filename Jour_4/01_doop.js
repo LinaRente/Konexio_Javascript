@@ -1,33 +1,42 @@
+function doop(param1, param2, param3) {
+  var param1 = parseInt(process.argv[2]);
+  var param2 = process.argv[3];
+  var param3 = parseInt(process.argv[4]);
+
+  var params = param1, param2, param3;
+
+  
+      if(param2 == '+' ) {
+          result = param1 + param3;
+      } else if(param2 == '*') {
+          result = param1 * param3;
+      } else if(param2 == "/") {
+          result = param1 / param3;
+      } else if(param2 == '%') {
+          result = param1 % param3;
+      } else if (param2 == '-') {
+          result = param1 - param3;
+      }
+
+  return result
+ 
+
+      
+}
+console.log(doop())
+
+
+  // console.log(process.argv.slice(2));
+
+  // console.log(parseInt(process.argv.slice(2)));
+
+  // console.log(parseInt(process.argv[2]) + parseInt(process.argv[4])); 
+
+  // console.log(process.argv)
+
+
 //         for(var i = 2;  i <= process.argv.length; i++) {
 //             Number(process.argv[i])
-//         }
-
-
-        
+//         }        
 // console.log(parseInt(process.argv[2]) + parseInt(process.argv[4]));
 
-
-
-// for(var i = 2;  i <= process.argv.length; i++) {
-//     Number(process.argv[i])
-// }
-
-// console.log(parseInt(process.argv[2]) * parseInt(process.argv[4]));
-
-// function doop(param1, param2, param3) {
-//     var 
-    
-// // for(var i = 2;  i <= process.argv.length; i++) {
-// //     Number(process.argv[i])
-// // }
-// }
-// console.log(parseInt(process.argv[2]) + parseInt(process.argv[4]));
-
-// process.argv.forEach((val, index) => {
-//     console.log(`${index}: ${val}`)
-//   })
-
-  function programme(param1, param2, param3) {
-      var arg = process.argv.programme(param1, param2, param3);
-  } 
-  console.log(parseInt(process.argv[2] + parseInt(process.arg[4])));
