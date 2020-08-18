@@ -1,16 +1,13 @@
 function doop(param1, param2, param3) {
-    var param1 = process.argv[2];
-    var param2 = process.argv[3];
-    var param3 = process.argv[4];
+    var param1 = parsenInt(process.argv[2]);
+    var param2 = parsenInt(process.argv[3]);
+    var param3 = parsenInt(process.argv[4]);
 
 
     if(param2 == '+' ) {
-        result = parseInt(param1) + parseInt(param3);
+        result = param1 + param3;
     } else if(param2 == '*') {
-        result = parseInt(param1) * parseInt(param3);
-    } else if(param2 == '/' ) {
-        result = parseInt(param1) - parseInt(param3);
-
+        result = param1 * param3;
     }
     return result
 }
