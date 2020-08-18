@@ -20,5 +20,5 @@ function exOh(str) {
 
     }
 }
-console.log(exOh("xxxoo"));
+console.log(exOh("xxxooo"));
 

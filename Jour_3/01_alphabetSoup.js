@@ -15,13 +15,13 @@ function alphabetSoup(str){
 console.log(alphabetSoup("elisabeth"));
 
 
-//     array.sort
+    // array.sort
 
-// function sortString(str){
-//     var arr = str.split('');
-//     var sorted = arr.sort();
-//     return sorted.join('');
-//   }
-// console.log(sortString('elisabeth'))
+function sortString(str){
+    var arr = str.split('');
+    var sorted = arr.sort();
+    return sorted.join('');
+  }
+console.log(sortString('elisabeth'))
 
 
