@@ -3,24 +3,23 @@ function doop(param1, param2, param3) {
   var param2 = process.argv[3];
   var param3 = parseInt(process.argv[4]);
 
-  var params = param1, param2, param3;
-
-  
-      if(param2 == '+' ) {
+  var params = process.argv.slice(2);
+    if(params.length === 3){
+        if(param2 == '+' ) {
           result = param1 + param3;
-      } else if(param2 == '*') {
+        } else if(param2 == '*') {
           result = param1 * param3;
-      } else if(param2 == "/") {
+        } else if(param2 == "/") {
           result = param1 / param3;
-      } else if(param2 == '%') {
+        } else if(param2 == '%') {
           result = param1 % param3;
-      } else if (param2 == '-') {
+        } else if (param2 == '-') {
           result = param1 - param3;
-      }
-
-  return result
- 
-
+        }
+    } else { 
+        return "Error!"
+    }    
+    return result
       
 }
 console.log(doop())
