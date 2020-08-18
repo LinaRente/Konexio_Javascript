@@ -8,4 +8,4 @@ function simpleAdding(num) {
         return total ;
 }
 
-console.log(simpleAdding(140));
+console.log(simpleAdding(12));
