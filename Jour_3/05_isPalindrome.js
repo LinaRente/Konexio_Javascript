@@ -5,9 +5,10 @@ function isPalindrome(str) {
     for (var i = 0; i < string/2; i++) {
       if (str[i] !== str[string - 1 - i]) {
           return false;
+      }else {
+        return true
       }
     }
-    return true;
-   }
+}
 
 console.log(isPalindrome("eye"))
