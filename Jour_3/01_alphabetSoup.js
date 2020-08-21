@@ -22,6 +22,4 @@ function sortString(str){
     var sorted = arr.sort();
     return sorted.join('');
   }
-console.log(sortString('elisabeth'))
-
-
+console.log(sortString('elisabeth'))    

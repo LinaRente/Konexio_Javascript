@@ -19,8 +19,9 @@ function secondGreatLow(arr) {
 	arr.sort(function(a, b) {  //regarder le cours sur arr.sort sur MDN
 	    return a - b ;
     });
-    // console.log(arr)
-
+    // console.log(arr.sort);
+    //console.log(arr)
+    
 	secondLow = arr[1];
 	secondGreat = arr[arr.length-2];
 
