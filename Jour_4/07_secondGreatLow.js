@@ -11,6 +11,8 @@
     
 function secondGreatLow(arr) { 
 
+    // var array = arr.process.argv[2];
+
     // console.log(arr)
 
 	var secondGreat;
@@ -20,13 +22,13 @@ function secondGreatLow(arr) {
 	    return a - b ;
     });
     // console.log(arr.sort);
-    //console.log(arr)
+    // console.log(arr)
     
 	secondLow = arr[1];
 	secondGreat = arr[arr.length-2];
 
 
-	console.log(secondLow, secondGreat); 
+	// console.log(secondLow, secondGreat); 
 	         
 }
 secondGreatLow([180, 42, 1, 42]); 

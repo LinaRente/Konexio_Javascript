@@ -1,11 +1,13 @@
-function letterCapitalize() {
-    function upperCase(sentence) {
-        return sentence.toUpperCase();
+function letterCapitalizeRegex() {
+    
+    function upperCase(str) {
+        return str.toUpperCase();
     }
-    function titleCase(sentence) {
+  
+    function titleCase(str) {
         var firstLetterRx = /(^|\s)[a-z]/g;
-        return sentence.replace(firstLetterRx, upperCase);
+        return str.replace(firstLetterRx, upperCase);
     }
     console.log(titleCase("lina renteria"));
 }
-letterCapitalize()
+letterCapitalizeRegex();
