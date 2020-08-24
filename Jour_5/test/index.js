@@ -66,56 +66,56 @@
 //Utiliser prompt pour la validation, les valeurs par défaut et plus
 
 
-// var prompt = require('prompt');
+var prompt = require('prompt');
 
-// var schema = {
-//     properties: {
-//       name: {
-//         pattern: /^[a-zA-Z\s\-]+$/,
-//         message: 'Name must be only letters, spaces, or dashes',
-//         required: true
-//       },
-//       password: {
-//         hidden: true
-//       }
-//     }
-//   };
+var schema = {
+    properties: {
+      nombreMyster: {
+        pattern: /^[a-zA-Z\s\-]+$/,
+        message: 'Name must be only letters, spaces, or dashes',
+        required: true
+      },
+      password: {
+        hidden: true
+      }
+    }
+  };
 
-//   //
-//   // Start the prompt
-//   //
-//   prompt.start();
+  //
+  // Start the prompt
+  //
+  prompt.start();
 
-//   //
-//   // Get two properties from the user: email, password
-//   //
-//   prompt.get(schema, function (err, result) {
-//     //
-//     // Log the results.
-//     //
-//     console.log('Command-line input received:');
-//     console.log('  name: ' + result.name);
-//     console.log('  password: ' + result.password);
-//   });
+  //
+  // Get two properties from the user: email, password
+  //
+  prompt.get(schema, function (err, result) {
+    //
+    // Log the results.
+    //
+    console.log('Command-line input received:');
+    console.log('  name: ' + result.name);
+    console.log('  password: ' + result.password);
+  });
 
 
 //Appeler prompt plusieurs fois
 
-var prompt = require('prompt');
+// var prompt = require('prompt');
 
-prompt.start();
+// prompt.start();
 
-function displayPrompt() {
-  prompt.get({ name: 'q', description: 'Do you like prompt?' }, function (
-    err,
-    result
-  ) {
-    if (result.q === 'y' || result.q === 'n') {
-      console.log('Answer received');
-    } else {
-      displayPrompt();
-    }
-  });
-}
+// function displayPrompt() {
+//   prompt.get({ name: 'q', description: 'Do you like prompt?' }, function (
+//     err,
+//     result
+//   ) {
+//     if (result.q === 'y' || result.q === 'n') {
+//       console.log('Answer received');
+//     } else {
+//       displayPrompt();
+//     }
+//   });
+// }
 
-displayPrompt();
+// displayPrompt();
