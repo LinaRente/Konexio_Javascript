@@ -8,6 +8,6 @@ function letterCapitalizeRegex() {
         var firstLetterRx = /(^|\s)[a-z]/g;
         return str.replace(firstLetterRx, upperCase);
     }
-    console.log(titleCase("lina renteria"));
+    console.log(titleCase("lina"));
 }
 letterCapitalizeRegex();
