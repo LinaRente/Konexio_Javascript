@@ -1,3 +1,4 @@
-function(test){
+function (){
     return 'maison'
-}
+};
+

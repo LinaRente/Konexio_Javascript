@@ -1,26 +1,25 @@
-function letterCount(str) { 
+function letterCountRepeat(str) {
 
-    var string = str.split(" ");
-    // console.log(string);
+    var array = str.split(" ");
     var result = 0;
-    var word = "-1"
-  
-    for (var i = 0; i < string.length; i++) {
-        // console.log(string);
-        for (var j = 0; j < string[i].length; j++) {
-            var count1 = 0;
-                for (var k = j + 1; k < string[i].length; k++) {
-                    if(string[i] + string[j] === string[i] + string[k]) {
-                        count1 += 1;
-                    }           
-                    if(count1 > result) {
-                        result = count1;
-                        word = string[i];
-                    }
+    var word = '-1'
+
+    for (var i = 0; i < array.length; i++) {
+        for (var j = 0; j < array[i].length; j++) {
+            var count = 0;
+            var actualWord = array[i];
+            for (var k = j + 1; k < actualWord.length; k++) {
+                if (actualWord[j] === actualWord[k]) {
+                    count += 1;
                 }
+                if (count > result) {
+                    result = count;
+                    word = actualWord;
+                }
+            }
         }
-        
+
     }
     return word;
-}          
-console.log(letterCount("Today, is the greatest day ever!"));
+}
+console.log(letterCountRepeat("No words"));
