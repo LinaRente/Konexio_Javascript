@@ -3,11 +3,11 @@ function letterCapitalizeRegex() {
     function upperCase(str) {
         return str.toUpperCase();
     }
-  
-    function titleCase(str) {
-        var firstLetterRx = /(^|\s)[a-z]/g;
-        return str.replace(firstLetterRx, upperCase);
+
+    function firstCase(str) {
+        var firstLetter = /(^|\s)[a-z]/g;
+        return str.replace(firstLetter, upperCase);
     }
-    console.log(titleCase("lina"));
+    console.log(firstCase("mi casita esta bien bonita"));
 }
 letterCapitalizeRegex();

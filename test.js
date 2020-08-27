@@ -12,6 +12,29 @@ console.log(obj.name);
 console.log(obj['type']);
 console.log(obj.type[1]);
 
+var properties = [
+    {
+        name: 'username',
+        validator: /^[a-zA-Z0-9-]+$/,
+    },
+    {
+        name: 'password',
+        validator: /^(?=.*\d)[0-9a-zA-Z\s\-\,\.]{6,}$/,
+        hidden: true,
+        replace: '*',
+    },
+    {
+        name: 'email',
+        format: 'email',
+    }
+];
+// console.log(properties[0].validator);
+
+properties[0].validator = usernameVal;
+var usernameVal = /^[a-zA-Z0-9-]+$/;
+
+console.log(usernameVal)
+
 //function letterCountRepeat(str) {
     //     var mot = '-1';
     //     var result = " ";
