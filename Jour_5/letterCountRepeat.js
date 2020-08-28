@@ -22,4 +22,4 @@ function letterCountRepeat(str) {
     }
     return word;
 }
-console.log(letterCountRepeat("No words"));
+console.log(letterCountRepeat("no words"));
