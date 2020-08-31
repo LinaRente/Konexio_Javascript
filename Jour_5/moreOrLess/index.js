@@ -6,7 +6,7 @@ function displayPrompt() {
     prompt.start();
     //var number2 = parseInt(prompt);
     // console.log('test 2', number)
-    prompt.get({ name: 'q', description: 'Do you like prompt?'}, function (err, result) {
+    prompt.get({ name: 'q', description: 'Nombre mistere'}, function (err, result) {
         //if ((prompt <= 100 && prompt >= 1)){
         // console.log(result)
         // console.log(parseInt(result.q))
