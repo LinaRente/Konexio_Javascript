@@ -12,3 +12,6 @@ for(var i = 0; i <= num; i++) {
     array.push(number);
 }
 console.log(array);
+
+
+Create an array of words

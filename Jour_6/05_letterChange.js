@@ -7,7 +7,7 @@ function letterChanges(str) {
     var z = 'z';
     var a = 'A';
     
-    for (; i < len; i++){
+    for (var i = 0; i < len; i++){
       /*Using ASCII code: this if statement return true if character at
       str[i] is a - y*/
         if (str.charCodeAt(i) >= 97 && str.charCodeAt(i) <= 121) {
@@ -40,26 +40,47 @@ console.log(letterChanges('hello*3'))
 
 
 
-// function letterChange(str) { 
+function letterChange(str) { 
   
-//     var strArray = str.toLowerCase().split("");
-//     var letterChange = strArray.map(function(value, index, array){
+    var strArray = str.toLowerCase().split("");
+    var letterChange = strArray.map(function(value, index, array){
       
-//         if(str.charCodeAt(index) < 97 || str.charCodeAt(index) > 122){
-//             return value
-//         }else{
-//             return String.fromCharCode(str.charCodeAt(index)+1)
-//         }
-//     });
+        if(str.charCodeAt(index) < 97 || str.charCodeAt(index) > 122){
+            return value
+        }else{
+            return String.fromCharCode(str.charCodeAt(index)+1)
+        }
+    });
     
-//     letterChange = letterChange.map(function(value, index, array){
-//         if(/[aeiou]/.test(value)){
-//             return value.toUpperCase();
-//         }else{
-//             return value;
-//         }
-//     });
+    letterChange = letterChange.map(function(value, index, array){
+        if(/[aeiou]/.test(value)){
+            return value.toUpperCase();
+        }else{
+            return value;
+        }
+    });
     
-//     return letterChange.join(""); 
-// }
-// console.log(letterChange('fun times'));
+    return letterChange.join(""); 
+}
+console.log(letterChange('fun times'));
+
+
+// version map
+//   function LetterChanges(str) {
+//    let strArray = str.toLowerCase().split("");
+//    let letterChange = strArray.map(function(value, index, array){
+//      if(str.charCodeAt(index) < 97 || str.charCodeAt(index) > 122){
+//        return value
+//      }else{
+//         return String.fromCharCode(str.charCodeAt(index)+1)
+//       }
+//    });
+//    letterChange = letterChange.map(function(value, index, array){
+//       if(/[aeiou]/.test(value)){
+//         return value.toUpperCase();
+//      }else{
+//        return value;
+//      }
+//    });
+//    return letterChange.join("");
+//   }
