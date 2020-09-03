@@ -13,4 +13,4 @@ function longestWord(str) {
     }
     return word;
 }
-console.log(longestWord("I love dogs"))
+console.log(longestWord("I loveeee dogs"))
