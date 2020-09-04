@@ -1,44 +1,49 @@
 var prompt = require('prompt');
+var mots = require('./mots.json');
 
-var mysteryWord = 'ROUGE';
+
+var mysteryWord = mots[Math.floor(Math.random() * mots.length)].label;
+console.log(mysteryWord);
 var lowerCaseWord = mysteryWord.toLowerCase();
 var hiddenWord = lowerCaseWord.replace(/./gi, "*");
-var position;
 var lives = 10;
-var guessed = [' '];
+
+prompt.start();
+
 
 function newPendGame() {
 
-    var prompt = require('prompt');
-    prompt.start();
 
     prompt.get({ name: 'letter', description: 'Your guess ' }, function (err, result) {
-        var userLetter = (result.letter);
-
+        var userLetter = result.letter;
+        var word = [];
         for (var i = 0; i <= lowerCaseWord.length - 1; i++) {
             // console.log(lowerCaseWord[i]);
-            if (lowerCaseWord.charAt(i) === userLetter) {
-                guessLetter = lowerCaseWord.indexOf(userLetter);
-                hiddenWord = hiddenWord.replace(hiddenWord[i], userLetter);
+            if (userLetter === lowerCaseWord.charAt(i)) {
+                hiddenWord = hiddenWord.substring(0, i) + userLetter + hiddenWord.substring(i + 1)
                 console.log(hiddenWord)
-                position = lowerCaseWord.indexOf(userLetter);
-                console.log(position);
-                console.log('Nice choice! Go On!')
+                word = userLetter;
             }
-        } if (userLetter !== lowerCaseWord.charAt(i)) {
+        }
+        if (word !== userLetter) {
             console.log("try an other letter")
+            console.log(hiddenWord)
             lives = lives - 1;
-            console.log("You Have " + lives)
+
+
             if (lives === 0) {
                 console.log('Game Over');
+                console.log('Your Word Was ' + mysteryWord.toUpperCase())
                 return;
             }
+            console.log("You Have " + lives)
+        }
+        if (hiddenWord === lowerCaseWord) {
 
+            console.log("You win!!")
+            return
         }
         newPendGame();
     });
 }
 newPendGame();
-
-
-
