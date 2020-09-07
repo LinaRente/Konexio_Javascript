@@ -1,8 +1,7 @@
-var numTest =   90; 
+var numTest = 90;
 
-function timeConvert(num)
-{
- 
+function timeConvert(num) {
+
     var heure = Math.floor(num / (60 * 60));
 
     var minutesModulo = num % (60 * 60);
@@ -12,6 +11,6 @@ function timeConvert(num)
     var secondesModulo = minutesModulo % 60;
     var secondes = Math.ceil(secondesModulo);
 
-    return heure + ":" + minutes + ":"+ secondes;
+    return heure + ":" + minutes + ":" + secondes;
 }
 console.log(timeConvert(numTest));

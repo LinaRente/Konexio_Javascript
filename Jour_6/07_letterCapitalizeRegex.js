@@ -1,5 +1,5 @@
 function letterCapitalizeRegex() {
-    
+
     function upperCase(str) {
         return str.toUpperCase();
     }

@@ -1,6 +1,6 @@
 module.exports = {
-    
-    getTimePassed: function(date1, date2) { 
+
+    getTimePassed: function (date1, date2) {
 
         var date1 = String(process.argv[2]);
         var date2 = String(process.argv[3]);
@@ -10,7 +10,7 @@ module.exports = {
         var secondTime = new Date(date2);
         // console.log(firstTime + secondTime);
 
-        var timeDiff = secondTime.getTime() -  firstTime.getTime();
+        var timeDiff = secondTime.getTime() - firstTime.getTime();
         // console.log(timeDiff);
 
         var minDiff = timeDiff / 60 / 1000; //les minutes!;
@@ -22,7 +22,7 @@ module.exports = {
         timeDiff /= 1000;
         var jours = Math.floor(timeDiff / 86400);
 
-        return "Days passed : " + jours + " and minutes passe :"  + minutes; 
+        return "Days passed : " + jours + " and minutes passe :" + minutes;
 
     }
 }

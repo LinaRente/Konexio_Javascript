@@ -1,10 +1,10 @@
-function swapCase(str){
+function swapCase(str) {
     var string = "";
 
-    for(var i = 0; i < str.length; i++){ 
-        if(str[i] == str[i].toLowerCase()){
+    for (var i = 0; i < str.length; i++) {
+        if (str[i] == str[i].toLowerCase()) {
             string += str[i].toUpperCase();
-        } else { 
+        } else {
             string += str[i].toLowerCase();
         }
     }

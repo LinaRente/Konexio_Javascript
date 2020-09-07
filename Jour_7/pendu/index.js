@@ -44,31 +44,3 @@ function penduGame() {
 
 }
 penduGame();
-
-
-
-
-
-
-// for(var i = randomWord.length-1; i >= 0; i--){
-//     console.log(randomWord.charAt(i))
-//     if( randomWord.charAt(i) === (result.q)){ 
-//         console.log('ok')
-//     }
-// }
-
-        // for(var i = 0; i < randomWord.length; i++){
-        //     for(var j = 0; j < randomWord[i].length; i++){
-        //         // console.log(randomWord[i])
-        //             if(randomWord[i].charAt(j) === (result.q)){
-        //                 console.log('bravo')
-        //             }else {
-        //                 console.log('non!!')
-        //             }
-
-        //     }
-            // if(randomWord.charAt(i) === (result.q)){
-            //     console.log('bravo continue')
-            // } else {
-            //     console.log('non! recommence')
-            // } 

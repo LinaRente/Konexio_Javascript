@@ -16,8 +16,8 @@ var arr = [{
     job: 'tv host'
 }]
 
-var arr2 = arr.filter(function(elem) {   
-    if(elem.job === 'tv host') { 
+var arr2 = arr.filter(function (elem) {
+    if (elem.job === 'tv host') {
         return true
     }
 })

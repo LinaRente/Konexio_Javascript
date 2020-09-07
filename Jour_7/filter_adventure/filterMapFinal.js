@@ -30,16 +30,16 @@ var arr = [{
     tags: ['fashion-week', 'fashion-geek', 'tech']
 }]
 
-var arr2 = arr.filter(function(elem) { 
-    for(var i = 0; i < arr.length; i++){
-        if(elem.tags[i] === 'tech'){
+var arr2 = arr.filter(function (elem) {
+    for (var i = 0; i < arr.length; i++) {
+        if (elem.tags[i] === 'tech') {
             return true
         }
     }
 });
 
-var arr3 = arr2.map(function(el) {
-     return el.title;
+var arr3 = arr2.map(function (el) {
+    return el.title;
 })
 console.log(arr2)
 console.log(arr3)

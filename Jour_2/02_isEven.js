@@ -1,10 +1,10 @@
 function isEven(num) {
-    if(num%2 == 0){
+    if (num % 2 == 0) {
 
         return true;
     }
-    else{ 
-    return false 
+    else {
+        return false
     }
 
 }

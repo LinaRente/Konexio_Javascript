@@ -12,15 +12,11 @@ var arr = [{
     surname: 'Norton'
 }]
 
-var arr2 = arr.filter(function(elem) { 
-//    return elem.firstName[0] === 'D';
+var arr2 = arr.filter(function (elem) {
+    //    return elem.firstName[0] === 'D';
 
-    if(elem.firstName.substring(0,1) === 'D'){
+    if (elem.firstName.substring(0, 1) === 'D') {
         return true
     }
-    // var arr3 = elem.firstName.substring(0, 1);
-    // if(arr3 === 'D') { 
-    //     return true
-    // }
 })
 console.log(arr2)

@@ -13,21 +13,21 @@
 
 function formatDateToday() {
 
-    var now = new Date();
-    var day = now.getDate();
-    // console.log(day);
-    var month = now.getMonth() + 1;
-    // console.log(month);
-    var year = now.getFullYear();
-    // console.log(year);
-    
-    if(day < 10) {
-         day = "0" + day;
-    } 
-    if(month < 10) {
-         month = "0" + month
-    }
-     
+     var now = new Date();
+     var day = now.getDate();
+     // console.log(day);
+     var month = now.getMonth() + 1;
+     // console.log(month);
+     var year = now.getFullYear();
+     // console.log(year);
+
+     if (day < 10) {
+          day = "0" + day;
+     }
+     if (month < 10) {
+          month = "0" + month
+     }
+
      return day + "/" + month + "/" + year;
 
 }

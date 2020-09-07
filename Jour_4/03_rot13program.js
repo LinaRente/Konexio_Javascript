@@ -7,15 +7,15 @@
 // return
 
 
-function rot13Program(param){
+function rot13Program(param) {
     var param = process.argv[2];
     var result = "";
-    for(var i = 0; i < param.length; i++){
+    for (var i = 0; i < param.length; i++) {
         var tableAscii = param[i].charCodeAt();
         // console.log(tableAscii)
-        if(tableAscii >= 65 && tableAscii <= 77 || tableAscii >= 97 && tableAscii <= 109) {
+        if (tableAscii >= 65 && tableAscii <= 77 || tableAscii >= 97 && tableAscii <= 109) {
             result += String.fromCharCode(tableAscii + 13);
-        } else if(tableAscii >= 78 && tableAscii <= 90 || tableAscii >= 110 && tableAscii <= 122) {
+        } else if (tableAscii >= 78 && tableAscii <= 90 || tableAscii >= 110 && tableAscii <= 122) {
             result += String.fromCharCode(tableAscii - 13)
         } else {
             result += param[i];
