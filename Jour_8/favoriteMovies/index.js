@@ -14,31 +14,11 @@ request.get('http://www.omdbapi.com/?t=titanic&plot=full&apikey=4c24e19', functi
       request.get("http://www.omdbapi.com/?t=avatar&plot=full&apikey=4c24e19", function (err, res, body) {
         var json4 = JSON.parse(body);
 
-        console.log(nombreActuel++ + ".")
-        console.log("Title :" + " " + json1.Title)
-        console.log("Year :" + " " + json1.Year)
-        console.log("Genre :" + " " + json1.Genre)
-        console.log("Actors :" + " " + json1.Actors)
-        console.log(nombreActuel++ + ".")
-
-        console.log("Title :" + " " + json2.Title)
-        console.log("Year :" + " " + json2.Year)
-        console.log("Genre :" + " " + json2.Genre)
-        console.log("Actors :" + " " + json2.Actors)
-        console.log(nombreActuel++ + ".")
-
-        console.log("Title :" + " " + json3.Title)
-        console.log("Year :" + " " + json3.Year)
-        console.log("Genre :" + " " + json3.Genre)
-        console.log("Actors :" + " " + json3.Actors)
-        console.log(nombreActuel++ + ".")
-
-        console.log("Title :" + " " + json4.Title)
-        console.log("Year :" + " " + json4.Year)
-        console.log("Genre :" + " " + json4.Genre)
-        console.log("Actors :" + " " + json4.Actors)
-        
-      });
+        console.log(nombreActuel++ + ".", "\n", "Title :" + " " + json1.Title, "\n", "Year :" + " " + json1.Year, "\n", "Genre :" + " " + json1.Genre, "\n", "Actors :" + " " + json1.Actors
+                ,"\n", nombreActuel++ + ".", "\n", "Title :" + " " + json2.Title, "\n", "Year :" + " " + json2.Year, "\n", "Genre :" + " " + json2.Genre, "\n", "Actors :" + " " + json2.Actors
+                    , "\n", nombreActuel++ + ".", "\n", "Title :" + " " + json3.Title, "\n", "Year :" + " " + json3.Year, "\n", "Genre :" + " " + json3.Genre, "\n", "Actors :" + " " + json3.Actors
+                    , "\n", nombreActuel++ + ".", "\n", "Title :" + " " + json4.Title, "\n", "Year :" + " " + json4.Year, "\n", "Genre :" + " " + json4.Genre, "\n", "Actors :" + " " + json4.Actors
+      )});
     });
   });
 })

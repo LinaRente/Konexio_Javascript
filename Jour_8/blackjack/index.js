@@ -13,7 +13,6 @@ function displayPrompt() {
         if (playerAnswer === 'y' || playerAnswer === 'yes') {
             var randomCard = Math.floor(Math.random() * 10) + 1;
             playerScore = playerScore + randomCard;
-            // console.log('The bank had ' + bankScore);
             console.log('Your Score is ' + playerScore)
         }
         if (playerScore > 21 || playerScore === bankScore) {
@@ -21,9 +20,10 @@ function displayPrompt() {
             return;
         }
         if (playerScore === 21) {
-            console.log('The bank had ' + bankScore + '!' + ' BLACK JACK !\nYou Win!');
+            console.log('The bank had ' + bankScore + '!' + ' BLACK JACK ! You Win!');
             return;
         }
+
         if (playerAnswer === 'p' || playerAnswer === 'pass') {
 
             if (playerScore > bankScore) {
