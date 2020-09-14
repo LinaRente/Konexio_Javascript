@@ -19,7 +19,7 @@ request.get("http://data.fixer.io/api/latest?access_key=b3bf580f476dd1fa3e6d1ca8
         // console.log("json rates", json.rates[args])
 
         var currency1 = json.rates[arg]
-        currency2 = json.rates[args]
+        var currency2 = json.rates[args]
         if (currency1 && currency2) {
             var result = currency1 * arg3 // arg1 EUR=1   * 35
             var result2 = result * currency2 // arg2 USD = 1.183865 * res(35)
