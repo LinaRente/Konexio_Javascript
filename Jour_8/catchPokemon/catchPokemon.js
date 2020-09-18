@@ -40,29 +40,30 @@
 
 
 //chalange 1 et 2
-function catchPokemon(id) {
-    var request = require('request')
-    request.get('https://pokeapi.co/api/v2/pokemon/' + id, function (err, res, body) {
-        var json = JSON.parse(body)
-        //console.log(json)
-        var stock = [];
-        var json1 = json.moves
-        console.log("ID:" + " " + json.id)
-        console.log("Name:" + " " + json.name)
-        console.log("height:" + " " + json.height)
-        console.log("Weight:" + " " + json.weight)
-        // console.log(json)
-        for (var i = 0; i < json1.length; i++) {
-            var attaques = json1[i].move.name
-            stock.push(attaques)
-        }
-        console.log("Attaques" + " " + stock.toString());
-    })
-} catchPokemon(1)
+// function catchPokemon(id) {
+//     var request = require('request')
+//     request.get('https://pokeapi.co/api/v2/pokemon/' + id, function (err, res, body) {
+//         var json = JSON.parse(body)
+//         //console.log(json)
+//         var stock = [];
+//         var json1 = json.moves
+//         console.log("ID:" + " " + json.id)
+//         console.log("Name:" + " " + json.name)
+//         console.log("height:" + " " + json.height)
+//         console.log("Weight:" + " " + json.weight)
+//         // console.log(json)
+//         for (var i = 0; i < json1.length; i++) {
+//             var attaques = json1[i].move.name
+//             stock.push(attaques)
+//         }
+//         console.log("Attaques" + " " + stock.toString());
+//     })
+// } catchPokemon(1)
 
 // chalange 3
+var request = require('request')
 function catchPokemon(id) {
-    var request = require('request')
+    
     request.get('https://pokeapi.co/api/v2/pokemon/1', function (err, res, body) {
         var pkmn = {}
         var stock = [];
